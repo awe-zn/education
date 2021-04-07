@@ -117,3 +117,78 @@ header .auth-area {
 .btn-reg:hover {
   filter: saturate(0.66);
 }
+
+.search-bar {
+  padding: 24px;
+}
+
+.search-bar .search-box {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.search-box .search-area {
+  background-color: #f9f9f9;
+
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  border: 1px solid #ccc;
+
+  display: flex;
+}
+
+.search-area .icon-search {
+  font-size: 20px;
+  color: #696969;
+  padding: 15px;
+}
+.search-area input {
+  background: none;
+  border: none;
+
+  flex: 1;
+
+  font-weight: bold;
+  font-size: 20px;
+}
+.search-area input:focus {
+  outline: none;
+}
+
+.search-box .filters-search {
+  padding: 10px 16px;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  border: 1px solid #ccc;
+  border-left: none;
+}
+.filters-search ul {
+  list-style-type: none;
+
+  height: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+.filters-search li {
+  display: flex;
+  align-items: center;
+}
+.filters-search a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: #191919;
+
+  padding: 6px 12px;
+  border-radius: 999px;
+
+  transition: 0.3s background-color;
+}
+.filters-search a:hover {
+  background-color: #f2f2f2;
+}
+.filters-search a.active {
+  background-color: #000;
+  color: white;
+}
