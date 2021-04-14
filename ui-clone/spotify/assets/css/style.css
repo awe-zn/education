@@ -1,0 +1,131 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    right: -450px;
+
+    background: black;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all;
+
+    width: 450px;
+    max-width: 100vw;
+  }
+  nav.active {
+    right: 0;
+
+    opacity: 1;
+    visibility: visible;
+  }
+}
+nav a {
+  color: inherit;
+  text-decoration: inherit;
+
+  transition: 0.3s color;
+}
+nav a:hover {
+  color: #1ed760 !important;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 34px;
+}
+nav ul + ul {
+  margin-left: 35px !important;
+}
+nav ul + ul:before {
+  content: '';
+
+  position: absolute;
+  left: -17px;
+
+  width: 1px;
+  height: 100%;
+
+  background: white;
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul + ul {
+    margin-left: 0 !important;
+    margin-top: 51px !important;
+  }
+  nav ul + ul:before {
+    left: 0 !important;
+    top: -24px !important;
+
+    width: 24px !important;
+    height: 3px !important;
+  }
+}
+
+.hamburguer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: transparent;
+
+  padding: 0;
+  border: none;
+  width: 24px;
+  height: 16px;
+
+  z-index: 100;
+}
+.hamburguer .line {
+  height: 2px;
+  width: 100%;
+
+  pointer-events: none;
+
+  background-color: #fff;
+  transition: 0.3s all;
+}
+.hamburguer.active .line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburguer.active .line:nth-child(2) {
+  opacity: 0;
+}
+.hamburguer.active .line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.text-awe-dark1 {
+  color: #d9dadc !important;
+}
+.list-none {
+  list-style-type: none !important;
+}
+.bg-black {
+  background-color: #000 !important;
+}
+.fz-14 {
+  font-size: 14px !important;
+}
+.py-awe-12 {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+.p-awe-40 {
+  padding: 2.5rem !important;
+}
+
+.logo {
+  width: 132px;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 89px;
+  }
+}
