@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 @media screen and (max-width: 768px) {
   nav {
@@ -40,7 +40,7 @@ nav ul + ul {
   margin-left: 35px !important;
 }
 nav ul + ul:before {
-  content: '';
+  content: "";
 
   position: absolute;
   left: -17px;
@@ -51,13 +51,22 @@ nav ul + ul:before {
   background: white;
 }
 @media screen and (max-width: 768px) {
+  nav {
+    padding: 2.5rem;
+  }
   nav ul {
     display: flex;
     flex-direction: column;
   }
+  nav ul:first-child {
+    font-size: 36px !important;
+  }
   nav ul + ul {
     margin-left: 0 !important;
     margin-top: 51px !important;
+
+    font-weight: 500 !important;
+    font-size: 28px !important;
   }
   nav ul + ul:before {
     left: 0 !important;
@@ -78,12 +87,12 @@ nav ul + ul:before {
   padding: 0;
   border: none;
   width: 24px;
-  height: 16px;
+  height: 17px;
 
   z-index: 100;
 }
 .hamburguer .line {
-  height: 2px;
+  height: 3px;
   width: 100%;
 
   pointer-events: none;
@@ -101,8 +110,108 @@ nav ul + ul:before {
   transform: translateY(-7px) rotate(-45deg);
 }
 
+.main-post {
+  background: #2941ab;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: right 40% center;
+}
+.main-post h1 {
+  font-size: 84px;
+  font-weight: 800;
+  color: #1ed760;
+}
+.main-post button {
+  font-size: 13px;
+  font-weight: 700;
+  color: #2941ab;
+
+  background: #1ed760;
+  transition: 0.3s transform;
+
+  border: 0;
+  border-radius: 50px;
+  padding: 14px 32px;
+}
+.main-post button:hover {
+  transform: scale(1.03);
+}
+
+@media screen and (min-width: 1200px) {
+  .main-post h1 {
+    font-size: 140px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main-post {
+    height: calc(100vh - 63.56px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-post {
+    height: calc(100vh - 52.78px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-post {
+    height: calc(100vh - 48px);
+  }
+}
+
+.cards-plan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 32px;
+}
+.cards-plan .card {
+  padding: 16px;
+  border-radius: 10px;
+
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+
+  color: black;
+  font-weight: 500;
+}
+.cards-plan .card .toast-awe {
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+
+  background-color: #2e77d0;
+
+  display: inline-block;
+
+  font-weight: 700;
+  color: white;
+  font-size: 13px;
+}
+.cards-plan .card .title {
+  font-size: 22px;
+  font-weight: bold;
+
+  margin-bottom: 4px;
+}
+.cards-plan .card .description {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+.cards-plan .card .access {
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 12px;
+
+  display: block;
+}
+
 .text-awe-dark1 {
   color: #d9dadc !important;
+}
+.text-awe-green1 {
+  color: #1ed760 !important;
+}
+.text-awe-black1 {
+  color: #000;
 }
 .list-none {
   list-style-type: none !important;
@@ -113,12 +222,31 @@ nav ul + ul:before {
 .fz-14 {
   font-size: 14px !important;
 }
+.fz-16 {
+  font-size: 16px !important;
+}
+.fz-40 {
+  font-size: 40px !important;
+}
+.fw-medium {
+  font-weight: 500 !important;
+}
 .py-awe-12 {
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
 }
-.p-awe-40 {
-  padding: 2.5rem !important;
+.py-awe-32 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+.mb-awe-32 {
+  margin-bottom: 2rem !important;
+}
+.mb-awe-36 {
+  margin-bottom: 2.25rem !important;
+}
+.max-w50 {
+  max-width: 50% !important;
 }
 
 .logo {
