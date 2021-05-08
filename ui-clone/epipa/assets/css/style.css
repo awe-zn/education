@@ -1,9 +1,13 @@
 :root {
   --blue-first: #203c86;
   --blue-second: #77d5df;
+  --blue-third: #273444;
+  --blue-fourth: #2648a1;
   --black-first: #ffffff33;
   --white-first: #c0ccda;
+  --white-second: #707c8c;
   --yellow-first: #fdb32f;
+  --yellow-second: #fab900;
 }
 
 /* General styles */
@@ -14,6 +18,34 @@ body {
 /* Custom style's snippets */
 .bg-blue-first {
   background-color: var(--blue-first) !important;
+}
+
+.pt-awe-88 {
+  padding-top: 5.5rem !important;
+}
+.py-awe-12 {
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+.mb-awe-64 {
+  margin-bottom: 4rem !important;
+}
+
+.img-index-swiper {
+  max-height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn-awe-yellow-second {
+  border-color: var(--yellow-second);
+  background-color: var(--yellow-second);
+  color: #fff;
+}
+.btn-awe-blue-fourth {
+  border-color: var(--blue-fourth);
+  background-color: var(--blue-fourth);
+  color: #fff;
 }
 
 .border-black-first {
@@ -29,8 +61,17 @@ body {
 .text-white-first {
   color: var(--white-first) !important;
 }
+.text-white-second {
+  color: var(--white-second) !important;
+}
+.text-blue-third {
+  color: var(--blue-third) !important;
+}
 .fz-11 {
   font-size: 11px !important;
+}
+.fz-40 {
+  font-size: 40px !important;
 }
 .ff-mont {
   font-family: "Montserrat", sans-serif !important;
@@ -91,4 +132,20 @@ body {
 }
 .hamburguer:not(.collapsed) .line:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
+}
+
+.section-index {
+  background: linear-gradient(
+    133.88deg,
+    #0d3f82 22.52%,
+    #001736 48.17%,
+    #001736 68.25%
+  );
+}
+
+.swiper-nav {
+  position: absolute;
+  right: 24px;
+  bottom: -21px;
+  z-index: 1;
 }
