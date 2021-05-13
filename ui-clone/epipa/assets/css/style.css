@@ -3,11 +3,14 @@
   --blue-second: #77d5df;
   --blue-third: #273444;
   --blue-fourth: #2648a1;
+  --blue-fifty: #3c4858;
   --black-first: #ffffff33;
+  --black-second: #1b171724;
   --white-first: #c0ccda;
   --white-second: #707c8c;
   --yellow-first: #fdb32f;
   --yellow-second: #fab900;
+  --yellow-third: #ffd661;
 }
 
 /* General styles */
@@ -42,14 +45,43 @@ body {
   background-color: var(--yellow-second);
   color: #fff;
 }
+.btn-outline-awe-yellow-third {
+  border-color: var(--yellow-third);
+  background-color: transparent;
+  color: var(--yellow-third);
+}
+.btn-outline-awe-yellow-third:hover {
+  background-color: var(--yellow-third);
+  color: #000;
+}
+.btn-outline-awe-yellow-third:focus {
+  box-shadow: 0 0 0.25rem var(--yellow-third);
+}
 .btn-awe-blue-fourth {
   border-color: var(--blue-fourth);
+  background-color: var(--blue-fourth);
+  color: #fff;
+  transition: 0.3s opacity;
+}
+.btn-awe-blue-fourth:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+.btn-outline-awe-blue-fourth {
+  border-color: var(--blue-fourth);
+  background-color: transparent;
+  color: var(--blue-fourth);
+}
+.btn-outline-awe-blue-fourth:hover {
   background-color: var(--blue-fourth);
   color: #fff;
 }
 
 .border-black-first {
   border-color: var(--black-first) !important;
+}
+.border-black-second {
+  border-color: var(--black-second) !important;
 }
 .border-yellow-first {
   border-color: var(--yellow-first) !important;
@@ -67,8 +99,20 @@ body {
 .text-blue-third {
   color: var(--blue-third) !important;
 }
+.text-blue-fifty {
+  color: var(--blue-fifty) !important;
+}
 .fz-11 {
   font-size: 11px !important;
+}
+.fz-13 {
+  font-size: 13px !important;
+}
+.fz-16 {
+  font-size: 16px !important;
+}
+.fz-22 {
+  font-size: 22px !important;
 }
 .fz-40 {
   font-size: 40px !important;
@@ -148,4 +192,38 @@ body {
   right: 24px;
   bottom: -21px;
   z-index: 1;
+}
+
+.categories {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(196, 29, 29, 0) 33%,
+    rgba(11, 11, 11, 0.5) 75%
+  );
+
+  height: 300px;
+  padding: 16px;
+
+  color: white;
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.categories img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 0.25rem;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
